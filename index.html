@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>comiccom </title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                
+                    <a href="#">Home</a>
+                    <a href="#">Menu</a>
+                    <a href="#">New fact</a>
+                
+            </ul>
+
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h1>It's not a disign <br> It's <span>Community</span> </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo voluptatum repudiandae pariatur ipsam
+                    debitis! Quaerat enim perferendis maiores voluptatem iusto libero suscipit omnis hic aperiam quia
+                    et, quod itaque harum.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imageBox">
+                <img src="ironman.png" class="comico">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="ironman.png" onclick="imgslider('ironman.png');changecirclecolor('#e3af12')"></li>
+            <li><img src="spiderman.png" onclick="imgslider('spiderman.png');changecirclecolor('#1a8cff')"></li>
+            <li><img src="captain_america.png" onclick="imgslider('captain_america.png');changecirclecolor('#999999')"></li>
+        </ul>
+
+
+
+    </section>
+    <script type="text/javascript">
+        function imgslider(anything) {
+            document.querySelector('.comico').src = anything
+        }
+        function changecirclecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+
+</body>
+
+</html>
